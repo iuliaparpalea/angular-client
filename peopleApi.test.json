@@ -1,0 +1,300 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "defaultDescription",
+    "version" : "0.1",
+    "title" : "defaultTitle"
+  },
+  "paths" : {
+    "/clients/api/people/dropdown" : {
+      "get" : {
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "ApiKey",
+          "in" : "header",
+          "description" : "Generated header parameter. Example value ='BF4ED505-7245-453D-8A12-74D5D9345AF1'",
+          "required" : false,
+          "type" : "string",
+          "x-example" : "BF4ED505-7245-453D-8A12-74D5D9345AF1"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model0"
+            }
+          }
+        },
+        "security" : [ {
+          "Secured" : [ ]
+        } ]
+      }
+    }
+  },
+  "securityDefinitions" : {
+    "Secured" : {
+      "type" : "oauth2",
+      "authorizationUrl" : "https://example.com",
+      "flow" : "implicit",
+      "scopes" : { }
+    }
+  },
+  "definitions" : {
+    "ResidencyStatus" : {
+      "properties" : {
+        "Id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Name" : {
+          "type" : "string"
+        },
+        "DimGeographyId" : {
+          "type" : "object",
+          "properties" : { }
+        }
+      }
+    },
+    "MaritalStatus" : {
+      "properties" : {
+        "Id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Name" : {
+          "type" : "string"
+        },
+        "DimGeographyId" : {
+          "type" : "object",
+          "properties" : { }
+        }
+      }
+    },
+    "AnyDependents" : {
+      "properties" : {
+        "Id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Name" : {
+          "type" : "string"
+        },
+        "DimGeographyId" : {
+          "type" : "object",
+          "properties" : { }
+        }
+      }
+    },
+    "Genders" : {
+      "properties" : {
+        "Id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Name" : {
+          "type" : "string"
+        },
+        "DimGeographyId" : {
+          "type" : "object",
+          "properties" : { }
+        }
+      }
+    },
+    "EducationLevel" : {
+      "properties" : {
+        "Id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Name" : {
+          "type" : "string"
+        },
+        "DimGeographyId" : {
+          "type" : "object",
+          "properties" : { }
+        }
+      }
+    },
+    "States" : {
+      "properties" : {
+        "Id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Name" : {
+          "type" : "string"
+        },
+        "DimGeographyId" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "TimeAtThisAddress" : {
+      "properties" : {
+        "Id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Name" : {
+          "type" : "string"
+        },
+        "DimGeographyId" : {
+          "type" : "object",
+          "properties" : { }
+        }
+      }
+    },
+    "OccupiedStatus" : {
+      "properties" : {
+        "Id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Name" : {
+          "type" : "string"
+        },
+        "DimGeographyId" : {
+          "type" : "object",
+          "properties" : { }
+        }
+      }
+    },
+    "Titles" : {
+      "properties" : {
+        "Id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Name" : {
+          "type" : "string"
+        },
+        "DimGeographyId" : {
+          "type" : "object",
+          "properties" : { }
+        }
+      }
+    },
+    "DebtTypes" : {
+      "properties" : {
+        "Id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Name" : {
+          "type" : "string"
+        },
+        "DimGeographyId" : {
+          "type" : "object",
+          "properties" : { }
+        }
+      }
+    },
+    "BusinessRoles" : {
+      "properties" : {
+        "Id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Name" : {
+          "type" : "string"
+        },
+        "DimGeographyId" : {
+          "type" : "object",
+          "properties" : { }
+        }
+      }
+    },
+    "TimeInCountry" : {
+      "properties" : {
+        "Id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "Name" : {
+          "type" : "string"
+        },
+        "DimGeographyId" : {
+          "type" : "object",
+          "properties" : { }
+        }
+      }
+    },
+    "Model0" : {
+      "properties" : {
+        "ResidencyStatus" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ResidencyStatus"
+          }
+        },
+        "MaritalStatus" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/MaritalStatus"
+          }
+        },
+        "AnyDependents" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/AnyDependents"
+          }
+        },
+        "Genders" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Genders"
+          }
+        },
+        "EducationLevel" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/EducationLevel"
+          }
+        },
+        "States" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/States"
+          }
+        },
+        "TimeAtThisAddress" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/TimeAtThisAddress"
+          }
+        },
+        "OccupiedStatus" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/OccupiedStatus"
+          }
+        },
+        "Titles" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Titles"
+          }
+        },
+        "DebtTypes" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/DebtTypes"
+          }
+        },
+        "BusinessRoles" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/BusinessRoles"
+          }
+        },
+        "TimeInCountry" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/TimeInCountry"
+          }
+        }
+      }
+    }
+  }
+}

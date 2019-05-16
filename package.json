@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "generate": "ng-swagger-gen -i [path_to_json]",
+    "generate": "ng-swagger-gen -i peopleApi.test.json",
+    "generate-interfaces": "dtsgen --out types.d.ts peopleApi.test.json",
     "webpack": "ng serve --project angular-client -o --extra-webpack-config webpack.config.js"
   },
   "private": true,
