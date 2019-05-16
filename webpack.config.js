@@ -1,5 +1,4 @@
-const dist = 'dist',
-      webpack = require('webpack'),
+const webpack = require('webpack'),
       workboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
